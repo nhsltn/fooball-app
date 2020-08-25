@@ -1,0 +1,38 @@
+.contact {
+    padding-top: 5rem;
+    height: 100vh;
+
+    &__content {
+        box-shadow: 0 -2px 15px rgba(0, 0, 0, 1);
+        border-radius: 3%;
+        background-color: hsl(0, 0%, 9%);
+        padding: 4%;
+        width: 60%;
+        margin: 0 auto;
+
+        &-more {
+            font-size: 2rem;
+
+            & a {
+                color: inherit;
+                display: block;
+                padding-top: 1rem;
+
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+
+            & .fab {
+                margin-right: 1rem;
+            }
+
+        }
+
+    }
+
+    &__img {
+        width: 30%;
+        border-radius: 50%;
+    }
+}

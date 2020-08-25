@@ -1,0 +1,153 @@
+.button {
+
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all 0.2s;
+        position: relative;
+        font-size: $default-font-size;
+        border: none;
+        cursor: pointer;
+    }
+
+    &:hover {
+        transform: translateY(-0.3rem);
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
+        ;
+
+        &::after {
+            transform: scale(1.5);
+            opacity: 0;
+        }
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-0.1rem);
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
+        ;
+    }
+
+    &--primary {
+        background-color: $color-primary;
+        color: white;
+
+        &::after {
+            background-color: $color-primary;
+        }
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 0.4s;
+    }
+
+    &--narrow {
+        padding: 2rem;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    &__like-fixtures {
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        height: 4rem;
+        width: 4rem;
+        top: 40%;
+        right: 5%;
+        transition: all .3s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &__like-clubs {
+        border-radius: 3em;
+        padding: 2rem;
+    }
+
+    &__delete-clubs {
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        height: 3.5rem;
+        width: 3.5rem;
+        transition: all .3s;
+        margin-left: auto;
+
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &__page:hover {
+        transform: scale(1.07)
+    }
+
+    &__page span {
+        font-size: $default-font-size;
+    }
+
+    &__page,
+    &__page:visited,
+    &__page:focus {
+        margin-left: 2em;
+        padding: 1rem;
+        color: white;
+        border-radius: 1em;
+        background-color: #ff5252;
+        border: none;
+        outline: none;
+        transition: all .2s;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+}
+
+.results-button-prev {
+    float: left;
+    flex-direction: row-reverse;
+}
+
+.results-button-next {
+    float: right;
+}
+
+.results-button-prev span {
+    margin-left: 5px;
+}
+
+.fa-chevron-right {
+    margin-left: 5px;
+}
+
+.fa-chevron-left {
+    margin-left: 5px;
+}
+
+.fa-save,
+.fa-trash {
+    pointer-events: none;
+}

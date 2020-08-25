@@ -1,0 +1,58 @@
+.favourite {
+    padding: 4%;
+
+    @include respond(tab-land) {
+        height: 120vh;
+    }
+
+    &__wrapper {
+        display: flex;
+
+        @include respond(smalltab) {
+            display: block;
+        }
+
+    }
+
+    &__match {
+        flex: 1;
+        border-right: 2px solid $color-primary;
+
+        & .fixtures-list {
+            margin-top: 3rem;
+            width: 90%;
+        }
+
+        @include respond(smalltab) {
+            border-right: none;
+        }
+    }
+
+
+    &__team {
+        flex: 1;
+        border-left: 2px solid $color-primary;
+
+        @include respond(smalltab) {
+            border-left: none;
+        }
+
+        &-img {
+            margin-top: 2%;
+
+            width: 50%;
+        }
+    }
+
+    &-fixture {
+        width: 90%;
+        margin: 3rem auto;
+
+        @include respond(smalltab) {
+            margin: 4rem auto;
+        }
+    }
+
+
+
+}

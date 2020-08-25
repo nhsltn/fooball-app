@@ -1,0 +1,35 @@
+.player {
+    font-size: $default-font-size;
+
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: hsl(0, 2%, 12%);
+        line-height: 3;
+
+        &:nth-child(even) {
+            background-color: #1b1b1b;
+        }
+
+        & a {
+            display: inline;
+            color: white;
+        }
+    }
+
+    &__number {
+        margin-left: 1rem;
+    }
+
+    &__name {
+        margin-left: 2.5rem;
+
+    }
+
+    &__position {
+        color: #dad8d883;
+        margin-left: 2.5rem;
+    }
+}

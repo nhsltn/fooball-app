@@ -1,0 +1,71 @@
+.header {
+    height: 92.1vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 3%;
+    position: relative;
+    width: 100%;
+
+    @include respond(tab-pot) {
+        height: 50vh; //1rem = 12, 12/16
+    }
+
+    @include respond(phone) {
+        height: 30vh; //1rem = 12, 12/16
+    }
+
+
+    &__content a {
+        margin-left: 4rem;
+    }
+
+    &__img {
+        position: absolute;
+        bottom: 0;
+        right: 5%;
+        width: 40%;
+
+        @include respond(tab-land) {
+            width: 45%;
+        }
+
+        @include respond(tab-pot) {
+            font-size: 35%;
+            // right: 10%;
+        }
+
+        @include respond(phone) {
+            font-size: 30%; //1rem = 12, 12/16
+        }
+
+        @include respond(big-desktop) {
+            width: 35%;
+        }
+    }
+}
+
+.select-competition {
+    padding: 3%;
+
+    @include respond(tab-pot) {
+        padding: 5% 3%;
+    }
+
+    @include respond(smalltab) {
+        padding: 5% 3%;
+    }
+
+    @include respond(phone) {
+        padding: 5% 3%;
+    }
+
+    & input:checked+.radio-btn__label {
+        background-color: $color-primary !important;
+        color: white !important;
+    }
+}
+
+.standing-home {
+    display: none;
+}

@@ -1,0 +1,50 @@
+{
+  "short_name": "BOLA",
+  "name": "BOLA",
+  "lang": "en",
+  "background_color": "#b71c1c",
+  "theme_color": "#b71c1c",
+  "dir": "ltr",
+  "display": "standalone",
+  "orientation": "portrait",
+  "icons": [{
+      "src": "icon/app-icon-72x72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "icon/app-icon-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "icon/app-icon-144x144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "icon/app-icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon/app-icon-256x256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "icon/app-icon-384x384.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "icon/app-icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "index.html",
+  "gcm_sender_id": "564047806914",
+  "scope": "."
+}

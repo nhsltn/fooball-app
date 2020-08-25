@@ -1,0 +1,73 @@
+.fixtures {
+    // width: 60%;
+
+    &__list {
+        position: relative;
+        font-size: $default-font-size;
+        border-radius: 3rem;
+        background-color: #1b1b1b;
+        padding: 3rem;
+        box-shadow: 0 -2px 15px rgba(0, 0, 0, 1);
+
+
+    }
+
+    &__details {
+        display: flex;
+        justify-content: center;
+
+        &-hometeam {
+            flex-basis: 40%;
+            text-align: right;
+        }
+
+        &-awayteam {
+            flex-basis: 40%;
+            text-align: left;
+        }
+
+        &-score {
+            flex-basis: 20%;
+        }
+
+        // & span,
+        // div:not(:last-child) {
+        //     margin-right: 1rem;
+        // }
+    }
+
+    &__like {
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        transition: all .3s;
+
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
+
+    .fa-star {
+        font-size: 2rem;
+    }
+
+
+    & ul {
+        width: 60%;
+    }
+
+    &__pagination {
+        display: flex;
+        justify-content: flex-end;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    &__pagination i {
+        margin-top: 4px;
+    }
+}
+
+.remove {
+    display: none;
+}

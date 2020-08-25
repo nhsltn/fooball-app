@@ -1,0 +1,72 @@
+.radio-btn {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    justify-items: center;
+    align-items: start;
+    justify-content: center;
+    grid-gap: 7rem;
+
+    @include respond(small-dekstop) {
+        grid-template-columns: repeat(4, 24%);
+        grid-gap: 3rem;
+    }
+
+    @include respond(tab-pot) {
+        grid-template-columns: repeat(3, 25%);
+        grid-gap: 6rem;
+
+    }
+
+    @include respond(smalltab) {
+        grid-template-columns: repeat(3, 30%);
+        grid-gap: 3rem;
+    }
+
+    @include respond(phone) {
+        grid-template-columns: repeat(2, 40%);
+        grid-gap: 4rem;
+    }
+
+
+
+    &__label {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        border: 3px solid transparent;
+        border-radius: 2rem;
+        transition: all 300ms linear;
+
+
+        &:hover {
+            border: 3px solid $color-primary;
+        }
+    }
+
+    &__txt {
+        margin-left: 1em;
+        font-size: 2rem;
+        width: 16rem;
+
+        @include respond(small-dekstop) {
+            font-size: $default-font-size;
+        }
+    }
+
+    & img {
+        width: 10rem;
+        height: 10rem;
+        object-fit: contain;
+
+        @include respond(small-dekstop) {
+            width: 8rem;
+            height: 8rem;
+        }
+
+        @include respond(smalltab) {
+            width: 6rem;
+            height: 6rem;
+        }
+    }
+}

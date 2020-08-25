@@ -1,0 +1,31 @@
+.team__list {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    padding: 1rem;
+    background: hsl(0, 2%, 12%);
+
+    &:nth-child(even) {
+        background-color: #1b1b1b;
+    }
+
+    &-img {
+        height: 4rem;
+        width: 4rem;
+        margin-right: 1rem;
+    }
+
+    &-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.team-list {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.8rem;
+
+}

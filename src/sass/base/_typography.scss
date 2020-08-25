@@ -1,0 +1,51 @@
+h1,
+h2,
+h2,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.heading-primary {
+    text-transform: uppercase;
+    color: white;
+    padding: 4rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 6rem;
+    font-weight: 700;
+    word-spacing: 6px;
+    padding: 25rem 0 3rem 5rem;
+    width: 40%;
+
+    // @include respond(tab-pot) {
+    //     font-size: 50%; //1rem = 12, 12/16
+    // }
+
+    @include respond(phone) {
+        font-size: 4rem;
+        padding: 15rem 0 3rem 5rem;
+    }
+
+    @include respond(smalltab) {
+        padding-top: 15rem;
+    }
+
+    @include respond(big-desktop) {
+        font-size: 6rem; //1rem = 12, 12/16
+    }
+}
+
+.heading-secondary {
+    font-family: 'Timmana', sans-serif;
+    font-size: 5rem;
+}
+
+.heading-tertiary {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.main h1 {
+    max-width: 40%;
+}

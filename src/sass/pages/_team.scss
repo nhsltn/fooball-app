@@ -1,0 +1,97 @@
+.team {
+    display: flex;
+    margin: 0;
+    width: 100%;
+
+    @include respond(phone) {
+        display: block;
+    }
+
+    @include respond(smalltab) {
+        display: block;
+
+    }
+
+    &__info,
+    &__content {
+        padding: 3% !important;
+
+        @include respond(phone) {
+            padding: 4% 5% !important;
+        }
+
+        @include respond(smalltab) {
+            padding: 4% 5% !important;
+        }
+
+    }
+
+    &__info {
+        flex-basis: 40%;
+        background-color: #1b1b1b;
+        border-right: 2px solid $color-primary;
+
+        @include respond(phone) {
+            border-right: none;
+            border-bottom: 2px solid $color-primary;
+        }
+
+        @include respond(smalltab) {
+            border-right: none;
+            border-bottom: 2px solid $color-primary;
+        }
+
+        &-header {
+            display: flex;
+            align-items: center;
+
+            & img {
+                width: 25%;
+                margin-right: 3rem;
+            }
+
+            & h2 {
+                font-size: 5rem;
+                padding-top: 2.5rem;
+            }
+        }
+
+        &-details {
+            font-size: 2rem;
+
+
+            & span {
+                margin-left: 1.5rem;
+            }
+
+            & div:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
+
+        &-adress {
+            @include respond(phone) {
+                padding-bottom: 4rem;
+            }
+
+            @include respond(smalltab) {
+                padding-bottom: 4rem;
+            }
+        }
+    }
+
+    &__content {
+        flex-basis: 60%;
+        margin: 0 4% !important;
+    }
+
+    & .fixtures__pagination {
+        width: 100%;
+    }
+}
+
+.save-club {
+    margin: 2rem auto;
+    text-align: center;
+    width: 40%;
+}
